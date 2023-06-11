@@ -1,0 +1,29 @@
+.about-box {
+  height: '100vh';
+  min-height: '100vh';
+  padding-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.about-links {
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about-link {
+  color: #fff;
+}
