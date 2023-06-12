@@ -1,8 +1,24 @@
 import { Link, useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import './Navbar.css';
 
 function Navbar() {
   const { pathname } = useLocation();
+  const [socials, setSocials] = useState(true);
+
+  const showSocials = () => {
+    if (window.innerWidth <= 960) {
+      setSocials(false);
+    } else {
+      setSocials(true);
+    }
+  };
+
+  useEffect(() => {
+    showSocials();
+  }, []);
+
+  window.addEventListener('resize', showSocials);
 
   return !['/'].includes(pathname) ? (
     <>
@@ -24,7 +40,7 @@ function Navbar() {
               Photos
             </Link>
           </li>
-          <div className="navbar-socials">
+          {socials && <div className="navbar-socials">
             <Link
               to="https://linkedin.com/in/masondominey"
               className="nav-social"
@@ -34,7 +50,7 @@ function Navbar() {
             <Link to="https://github.com/mason-boop" className="nav-social">
               <i className="fa brands fa-github fa-lg" />
             </Link>
-          </div>
+          </div>}
         </div>
       </nav>
     </>
