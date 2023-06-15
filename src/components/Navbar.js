@@ -24,7 +24,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <h3 className="navbar-logo">MASE</h3>
+          <img className="navbar-logo" src="/earth2mase.gif"></img>
           <li className="nav-item">
             <Link to="/about" className="nav-links">
               About
@@ -40,17 +40,19 @@ function Navbar() {
               Photos
             </Link>
           </li>
-          {socials && <div className="navbar-socials">
-            <Link
-              to="https://linkedin.com/in/masondominey"
-              className="nav-social"
-            >
-              <i className="fa brands fa-linkedin fa-lg" />
-            </Link>
-            <Link to="https://github.com/mason-boop" className="nav-social">
-              <i className="fa brands fa-github fa-lg" />
-            </Link>
-          </div>}
+          {socials && (
+            <div className="navbar-socials">
+              <Link
+                to="https://linkedin.com/in/masondominey"
+                className="nav-social"
+              >
+                <i className="fa brands fa-linkedin fa-lg" />
+              </Link>
+              <Link to="https://github.com/mason-boop" className="nav-social">
+                <i className="fa brands fa-github fa-lg" />
+              </Link>
+            </div>
+          )}
         </div>
       </nav>
     </>

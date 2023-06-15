@@ -1,15 +1,25 @@
 .home-box {
-  padding-top: 400px;
+  padding-top: 80px;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-}
-
-.home {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.home-logo {
+  margin-right: 40px;
+  height: 400px;
+  transform: rotate(-7deg);
+}
+
+.home {
   text-align: justify;
   text-justify: inter-word;
   color: #fff;
+}
+
+Link {
+  cursor: pointer;
 }

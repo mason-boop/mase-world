@@ -6,9 +6,9 @@ function Designs() {
     <>
       <div className="design-box">
         <p className="design-blurb">
-          Below is a sample of some of my graphic design work. Most are
-          promotional show flyers for the Atlanta local music scene that I'm an
-          active member of.
+          Below are notable samples of my graphic design work,
+          many of which served as Atlanta-music promotional show flyers that
+          reached hundreds of audience members and increased revenue for venues.
         </p>
         <Gallery type="designs" />
       </div>

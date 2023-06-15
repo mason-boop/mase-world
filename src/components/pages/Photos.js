@@ -6,9 +6,10 @@ function Photos() {
     <>
       <div className="photo-box">
         <p className="photo-blurb">
-          This is a selection photos I'm really proud of. Photography has been a
-          hobby of mine since I was young, and something I wish I did more
-          often. Most photos are digital black & white taken on a Ricoh GR III.
+          Photography has been a hobby of mine since I was young. Below are
+          examples that make me incredibly proud as I reflect on the moments I
+          was able to capture. Photos taken on a Ricoh GR III primarily in black
+          and white.
         </p>
         <Gallery type="photos" />
       </div>

@@ -18,11 +18,12 @@ function About() {
     <>
       <div className="about-box">
         <p className="about-me">
-          My name is Mason and I am a software engineer, a graphic designer, and
-          a photographer. I excel in TypeScript/JavaScript and specifically the
-          Angular and React frameworks. I am detail-oriented, timely,
-          communicative, and exceptional with object-oriented programming and
-          frontend development.
+          My name is Mason Dominey. I am a software engineer, a graphic
+          designer, and a photographer. I have 3 years experience as a frontend
+          developer excelling in TypeScript/JavaScript and specifically React
+          and Angular 12+. I am detail-oriented, timely, collaborative, and
+          communicative, with a passion for developing solutions and learning
+          new technologies.
         </p>
         <div className="about-links">
           <Link
@@ -32,7 +33,6 @@ function About() {
           >
             Resume
           </Link>
-          {/* <Link className="about-link">Contact Me</Link> */}
           <Mailto email="mxdominey@gmail.com" subject="Contact Me" body="">
             Contact Me
           </Mailto>
